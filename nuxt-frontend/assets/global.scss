@@ -1,0 +1,32 @@
+@import 'fonts';
+@import 'colors';
+// Fonts
+
+::selection {
+  color: $secondary-color;
+  background: $accent-color;
+}
+
+body{
+  background-color: $main-color;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: #101010;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $accent-color;
+  border-radius: 50px;
+}
+
+
+// - definir fontes globais
+// - definir cores globais
+// - criar navbar
+// - criar sidebar
+// - scrollbar
