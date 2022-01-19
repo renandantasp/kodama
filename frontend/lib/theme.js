@@ -4,8 +4,8 @@ import { mode } from '@chakra-ui/theme-tools'
 const styles = {
   global: props => ({
     body: {
-      bg: mode('#E7E8ED', '#151515')(props),
-      color: mode('#151515', '#E7E8ED')(props)
+      bg: mode('#f9f5d7', '#282828')(props),
+      color: mode('#282828', '#f9f5d7')(props)
     }
   })
 }
@@ -22,15 +22,6 @@ const components = {
         marginTop: 3,
         marginBottom: 4
         
-      }
-    }
-  },
-  Container: {
-    sizes: {
-      xl: {
-        h: '56px',
-        fontSize: 'lg',
-        px: '32px',
       }
     }
   },

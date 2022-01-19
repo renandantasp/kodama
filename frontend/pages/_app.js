@@ -3,12 +3,11 @@ import Layout from '../components/layouts/main'
 import Fonts from '../components/fonts'
 import theme from '../lib/theme'
 import { AnimatePresence } from "framer-motion"
-// import '../styles/Home.module.scss'
+// import '../styles/global.scss'
 
 const Website = ({Component, pageProps, router}) => {
     return (
         <ChakraProvider theme={theme}>
-        {/* // <ChakraProvider > */}
             <Fonts />
             <Layout router={router}>
                 <AnimatePresence exitBeforeEnter initial={true}>

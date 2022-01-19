@@ -8,6 +8,7 @@
 
       <div class="item">
         <img  class="item profile" src="/profile.jpg" alt="profile" />
+        <p> My library</p>
         <font-awesome-icon class='item icon' :icon="['fa', 'bell']"  />
         <font-awesome-icon class='item icon' :icon="['fa', 'plus']"  />
         <font-awesome-icon class='item icon' :icon="['fa', 'ellipsis-h']"  />
@@ -26,7 +27,7 @@
     flex-direction: row;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 1.5vw;
+    padding-left: 22px;
     padding-right: 1.5vw;
     justify-content: space-between;
     align-items: center;
@@ -75,11 +76,16 @@
       &.profile{
         border-radius: 50%;
       }
+      p{
+        font-family: 'Open Sans';
+        font-weight: 400;
+      }
       &.title{
         font-family: 'Poppins';
         font-weight: 600;
         font-size: 20px;
         letter-spacing: 0.15em;
+        margin-left: 18px;
         margin-right: 3vw;
       }
     }

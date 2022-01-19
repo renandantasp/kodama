@@ -1,6 +1,9 @@
 import { url_parser } from '../utils.js'
-import { GameCard } from '../components/game_card.js'
+// import { GameCard } from '../components/GameCard.js'
 import { Container, SimpleGrid, Box } from '@chakra-ui/react'
+
+import { Grid } from '../components/Grid.js'
+
 
 export const getServerSideProps = async (ctx)  => {
   const url = url_parser(ctx)
@@ -14,13 +17,7 @@ export const getServerSideProps = async (ctx)  => {
 
 const Page = ( {games} ) => {
     return(
-      <Box>
-        <SimpleGrid   columns={[1,1,1,1,3,4]} gap={6}>
-        {games.map(game =>(
-          <GameCard game={game} />
-        ))} 
-        </SimpleGrid>
-      </Box>
+      <Grid items={games} />
   )
 
 }

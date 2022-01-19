@@ -35,8 +35,8 @@ export default {
   
   fontawesome: {  
     icons: {
-      solid: [ 'faBell', 'faEllipsisH', 'faPlus', 'faSearch'],
-      // brands: true
+      solid: [ 'faBell', 'faEllipsisH', 'faPlus', 'faSearch', 'faDesktop'],
+      brands: ['faPlaystation', 'faXbox', 'faWindows']
     }
   },
 

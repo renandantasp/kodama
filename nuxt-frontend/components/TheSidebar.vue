@@ -20,7 +20,7 @@
     color: $secondary-color;
     padding-top: 46px;
     padding-left: 40px;
-    width: 18rem;
+    width: 16rem;
 
     ul {
       li {

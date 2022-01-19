@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import Navbar from '../navbar.js'
-import Sidebar from '../sidebar.js'
+import Navbar from '../Navbar.js'
+import Sidebar from '../Sidebar.js'
 import { Box, Container } from '@chakra-ui/react'
 
 
 const Main = ({ children, router}) =>{
     return(
-        <Box pb={8}>
+        <Box as="main" pb={8}>
             <Head>
                     <meta name="viewport" content="width=device-width, initial-scale=1"/>
                     <link rel="shortcut icon" href="/favicon.ico" />
@@ -17,9 +17,9 @@ const Main = ({ children, router}) =>{
             </Head>
             <Navbar path={router.asPath} />
             {/* <Sidebar path={router.asPath} /> */}
-            <Box mx={24} pt={24}>
+            <Container maxW="container.md" pt={14}>
                 {children}
-            </Box>
+            </Container>
             
         </Box>
     )
